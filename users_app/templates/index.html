@@ -11,7 +11,7 @@
     </head>
     <body>
         <div class="container">
-            <h2>All the Users</h2>
+            <h1 class="display-4">All the Users</h1>
             <br>
             <table class="allUsers">
                 <thead>
@@ -33,32 +33,31 @@
             </table>
             <hr>
             <br>
-            <h2>Add a User</h2>
+            <h1 class="display-4">Add a User</h1>
             <Form action="/add_user" method="POST">
                 {% csrf_token %}
-                <div class="formdivs">
-                    <div class="col1">
-                        <div class="form-group form-inline">
-                            <label class ="col-2" for="name">First Name:</label>
+                <div class="container" id="formdivs">
+                    <div class="row">
+                        <div class="form-group form-inline col-md">
+                            <label class ="col-3" for="name">First Name:</label>
                             <input type="text" class="form-control offset-1" name="first_name">
                         </div>
-                        <div class="form-group form-inline">
-                            <label class ="col-2" for="name">Last Name:</label>
+                        <div class="form-group form-inline col md">
+                            <label class ="col-3" for="name">Last Name:</label>
                             <input type="text" class="form-control offset-1" name="last_name">
                         </div>
                     </div>
-                    <div class="col2">
-                        <div class="form-group form-inline">
-                            <label class ="col-2" for="name">Email:</label>
+                    <div class="row">
+                        <div class="form-group form-inline col-md">
+                            <label class ="col-3" for="name">Email:</label>
                             <input type="text" class="form-control offset-1" name="email_address">
                         </div>
-                        <div class="form-group form-inline">
-                            <label class ="col-2" for="name">Age:</label>
+                        <div class="form-group form-inline col-md">
+                            <label class ="col-3" for="name">Age:</label>
                             <input type="text" class="form-control offset-1" name="age">
                         </div>
                     </div>
                 </div>
-                <br>
                 <div class="form-group form-inline">
                     <input value=" Add " type="submit">
                 </div>

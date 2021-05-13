@@ -10,7 +10,7 @@
     margin-left: 200px;
     padding: 20px; 
 }
-h2{
+h1{
     text-align: center;
 }
 .form-group{
@@ -20,16 +20,21 @@ h2{
     margin-left: auto;
     margin-right: auto;
 }
+.allUsers tbody{
+    height: 50px;
+    overflow-y: auto;
+}
 th, td{
     padding: 0 20px;
 }
 th, td, .allUsers{
     border: 2px solid black;
 }
-.formdivs{
-    display:flex;
-    justify-content: center;
-}
-.col2{
+#formdivs{
     display:inline-block;
+    justify-content: center;
+    padding-right: 250px;
+}
+.row{
+    margin-right: 200px;
 }
